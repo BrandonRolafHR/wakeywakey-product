@@ -1,0 +1,43 @@
+main {
+    color: white;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #333;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+div { 
+    padding: 10px;
+}
+
+h1, h2, h3, h4 {
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #06a184;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.empty {
+    flex: 2;
+}
+
+.gh-steps {
+    margin: 10px;
+}
+
+.gh-steps, li {
+    margin: 10px;
+    padding: 10px;
+}
