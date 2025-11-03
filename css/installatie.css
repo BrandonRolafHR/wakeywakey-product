@@ -1,0 +1,25 @@
+main{
+    background-color: #333;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.step h3{
+    text-align: center;
+}
+
+.step-with-image{
+    display: flex;
+    flex-direction: row;
+}
+
+.step-with-image div{
+    flex: 1;
+    padding: 10px;
+}
+
+.instruction-image{
+    background-color: white;
+    height: 15vh;
+}
