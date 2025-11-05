@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/installatie.css">
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
     <title>Installatie handleiding</title>
 </head>
+
 <body>
     <nav>
         <div>
             <img src="Image/logo.png" alt="Logo" href="index.html">
         </div>
-        <div class="empty"></div>
-        <div>
-            <a href="index.html">Home</a>
-        </div>
-        <div>
-            <a href="installatie.html">Installatie</a>
-        </div>
-        <div>
-            <a href="gebruik.html">Gebruik</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="installatie.html">Installatie</a>
+                <a href="gebruikershandleiding.html">Gebruik</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </div>
     </nav>
     <main>
@@ -68,11 +87,12 @@
             </article>
             <article class="step">
                 <h3>Stap 4</h3>
-                <p>Zorg ervoor dat alle verbindingen stevig vastzitten.</p>  
+                <p>Zorg ervoor dat alle verbindingen stevig vastzitten.</p>
             </article>
             <article class="step">
                 <h3>Stap 5</h3>
-                <p>De Wakey Wakey is nu klaar voor gebruik! Stel de wekker in volgens de <a href="gebruik.html">gebruiksaanwijzing</a>.</p>
+                <p>De Wakey Wakey is nu klaar voor gebruik! Stel de wekker in volgens de <a
+                        href="gebruik.html">gebruiksaanwijzing</a>.</p>
             </article>
         </section>
     </main>
@@ -80,4 +100,5 @@
         <p>&copy; 2025 Handleiding. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

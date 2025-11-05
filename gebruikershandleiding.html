@@ -1,73 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/gebruikershandleiding.css">
-    </head>
-    <body>
-        <main>
-            <nav class="navbar">
-                <div class="nav-items">
-                    <div class="nav-item">
-                        <img class="logo" src="Image/logo.png" alt="Logo">
-                    </div>
-                    <div class="nav-links">
-                        <div class="nav-item">
-                            <a href="index.html">Home</a>
-                        </div>
-                        <div class="nav-item">
-                            <a href="installatie.html">Installatie</a>
-                        </div>
-                        <div class="nav-item">
-                            <a href="gebruik.html">Gebruik</a>
-                        </div>
-                    </div>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gebruikershandleiding.css">
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div>
+                <img src="Image/logo.png" alt="Logo" href="index.html">
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="installatie.html">Installatie</a>
+                    <a href="gebruikershandleiding.html">Gebruik</a>
+                    <a href="contact.html">Contact</a>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <section class="heading-section">
-                <h1>Gebruikershandleiding</h1>
-            </section>
+        <section class="heading-section">
+            <h1>Gebruikershandleiding</h1>
+        </section>
 
-            <section class="gh-instructions">
-                <h2>
-                    Hier komt tekst te staan
-                </h2>
-                <ul class="gh-steps">
-                    <li>
-                        Heb je even voor mij
-                    </li>
-                    <li>
-                        Heb je even voor mij
-                    </li>
-                    <li>
-                        Heb je even voor mij
-                    </li>
-                    <li>
-                        Heb je even voor mij
-                    </li>
-                </ul>
-            </section>
+        <section class="gh-instructions">
+            <h2>
+                Hier komt tekst te staan
+            </h2>
+            <ul class="gh-steps">
+                <li>
+                    Heb je even voor mij
+                </li>
+                <li>
+                    Heb je even voor mij
+                </li>
+                <li>
+                    Heb je even voor mij
+                </li>
+                <li>
+                    Heb je even voor mij
+                </li>
+            </ul>
+        </section>
 
-            <section class="gh-instructions">
-                <h2>
-                    Blablablabla
-                </h2>
-                <ul class="gh-steps">
-                    <li>
-                        Heb je even voor mij
-                    </li>
-                    <li>
-                        Heb je even voor mij
-                    </li>
-                    <li>
-                        Heb je even voor mij
-                    </li>
-                    <li>
-                        Heb je even voor mij
-                    </li>
-                </ul>
-            </section>
-        </main> 
-    </body>
+        <section class="gh-instructions">
+            <h2>
+                Blablablabla
+            </h2>
+            <ul class="gh-steps">
+                <li>
+                    Heb je even voor mij
+                </li>
+                <li>
+                    Heb je even voor mij
+                </li>
+                <li>
+                    Heb je even voor mij
+                </li>
+                <li>
+                    Heb je even voor mij
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
 </html>

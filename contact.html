@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -24,11 +24,11 @@
             }
         }
     </script>
-    <title>Home</title>
+    <title>Contact</title>
 </head>
 
 <body>
-   <nav>
+    <nav>
         <div>
             <img src="Image/logo.png" alt="Logo" href="index.html">
         </div>
@@ -43,36 +43,23 @@
         </div>
     </nav>
     <main>
-        <section class="heading-section">
-            <h1>De Wakey Wakey wekker</h1>
-            <!-- Afbeelding van het prototype -->
+        <section>
+            <h1>Contacteer ons</h1>
+            <p>Heb je vragen of opmerkingen over de Wakey Wakey wekker? Neem gerust contact met ons op via onderstaande
+                gegevens:</p>
         </section>
-
-        <section class="product-intro-section">
-            <div class="product-intro-content">
-                <h3>
-                    Over het product
-                </h3>
-                <p>
-                    De Wakey Wakey wekker is bedoelt voor mensen die snel geneigd zijn om 's ochtends to snoozen.
-                    Herken jij jezelf hierin? Dan is dit product misschien iets voor jou!
-                </p>
+        <form>
+            <div>
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-        </section>
-
-        <section class="product-info-section">
-            <div class="product-info-content">
-                <h3>
-                    Sta altijd op tijd op!
-                </h3>
-                <p>
-                    Deze slimme wekker gaat pas uit als je uit bed stapt. Je kan je hierdoor dus niet meer verslapen.
-                    De ingebouwde sensor weet namelijk precies wanneer je nog in bed ligt. En er is geen knop om de
-                    wekker te snoozen.
-                </p>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
             </div>
-        </section>
-    </main>
-</body>
-
-</html>
+            <div>
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Verzenden</button>
+        </form>
