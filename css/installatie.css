@@ -23,3 +23,9 @@ main{
     background-color: white;
     height: 15vh;
 }
+
+@media (max-width: 750px) {
+    .step-with-image {
+        flex-direction: column-reverse;
+    }
+}

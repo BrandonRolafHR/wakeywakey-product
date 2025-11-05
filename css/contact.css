@@ -1,8 +1,18 @@
+.contact-heading {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-heading p, h1 {
+    display: flex;
+    justify-content: space-around;
+}
+
 form{
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
+    margin: 20px;
+    flex: 1;
 }
 
 form div{

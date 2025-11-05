@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gebruikershandleiding.css">
     <script>
@@ -25,22 +26,21 @@
 </head>
 
 <body>
+    <nav>
+        <div>
+            <img src="Image/logo.png" alt="Logo" href="index.html">
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="installatie.html">Installatie</a>
+                <a href="gebruikershandleiding.html">Gebruik</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
     <main>
-        <nav>
-            <div>
-                <img src="Image/logo.png" alt="Logo" href="index.html">
-            </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Menu</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="index.html">Home</a>
-                    <a href="installatie.html">Installatie</a>
-                    <a href="gebruikershandleiding.html">Gebruik</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </nav>
-
         <section class="heading-section">
             <h1>Gebruikershandleiding</h1>
         </section>
@@ -85,6 +85,9 @@
             </ul>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2025 Handleiding. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
