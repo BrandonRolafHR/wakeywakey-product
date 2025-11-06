@@ -16,6 +16,10 @@ a {
     text-decoration: underline;
 }
 
+img{
+    width: 50vw;
+}
+
 footer {
     background-color: #333;
     color: #06a184;

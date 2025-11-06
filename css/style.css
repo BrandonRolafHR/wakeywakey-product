@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: #047d67;
     margin: 0;
@@ -9,26 +9,25 @@ body{
     min-height: 100vh;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
 main {
-    background-color: #333;
     border-radius: 15px;
     margin: 10px;
 }
 
 /* Navigatiebar */
 
-nav{
+nav {
     background-color: #333;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav img{
+nav img {
     width: 200px;
 }
 
@@ -38,8 +37,12 @@ nav img{
     color: white;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.dropbtn:active {
+    background-color: #feac39;
 }
 
 .dropdown {
@@ -68,7 +71,7 @@ nav img{
     display:block;
 }
 
-main{
+main {
     color: white;
     flex: 1;
 }
@@ -77,20 +80,20 @@ h1, h2, h3, h4 {
     padding: 10px;
 }
 
-h1{
+h1 {
     color: #feac39;
 }
 
-h2{
+h2 {
     color: #feac39;
 }
 
-a{
-    color: #06a184;
+a {
+    color: #feac39;
     text-decoration: underline;
 }
 
-footer{
+footer {
     background-color: #333;
     color: #06a184;
     text-align: center;

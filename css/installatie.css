@@ -1,31 +1,42 @@
 main{
-    background-color: #333;
-    border-radius: 15px;
     margin: 10px;
-    padding: 10px;
+    padding: 50px;
 }
 
-.step h3{
+img{
+    width: 20%;
+}
+
+.step{
     text-align: center;
 }
 
 .step-with-image{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .step-with-image div{
-    flex: 1;
     padding: 10px;
 }
 
-.instruction-image{
-    background-color: white;
-    height: 15vh;
+
+.intro{
+    background-color: #333;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 @media (max-width: 750px) {
-    .step-with-image {
-        flex-direction: column-reverse;
+    .step-with-image{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        width: 50%;
     }
 }

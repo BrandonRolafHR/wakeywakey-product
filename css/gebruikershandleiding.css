@@ -13,8 +13,14 @@ a {
     text-decoration: underline;
 }
 
+.heading-section{
+    text-align: center;
+    padding: 10px;
+}
+
 .gh-steps {
     margin: 10px;
+    padding: 10px;
 }
 
 .gh-steps, li {
